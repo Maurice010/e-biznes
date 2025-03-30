@@ -1,0 +1,7 @@
+services:
+  app:
+    image: mauricee/e-biz-task1:task1-img
+    container_name: task1-img
+    build:
+      context: .
+      dockerfile: Dockerfile
