@@ -28,3 +28,17 @@ Obraz: [link docker-hub](https://hub.docker.com/repository/docker/mauricee/e-biz
 ❌ 5.0 Należy dodać konfigurację CORS dla dwóch hostów dla metod CRUD
 
 Kod: [folder](https://github.com/Maurice010/e-biznes/tree/main/task2)
+
+# Zadanie 3: Kotlin
+
+✅ 3.0 Należy stworzyć aplikację kliencką w Kotlinie we frameworku Ktor, która pozwala na przesyłanie wiadomości na platformę Discord [commit](https://github.com/Maurice010/e-biznes/commit/185c9bc7b8cf838ccfad4b8a96f0f21fc8b4e9f6)
+
+✅ 3.5 Aplikacja jest w stanie odbierać wiadomości użytkowników z platformy Discord skierowane do aplikacji [commit](https://github.com/Maurice010/e-biznes/commit/185c9bc7b8cf838ccfad4b8a96f0f21fc8b4e9f6)
+
+✅ 4.0 Zwróci listę kategorii na określone żądanie użytkownika [commit](https://github.com/Maurice010/e-biznes/commit/185c9bc7b8cf838ccfad4b8a96f0f21fc8b4e9f6)
+
+✅ 4.5 Zwróci listę produktów wg żądanej kategorii [commit](https://github.com/Maurice010/e-biznes/commit/185c9bc7b8cf838ccfad4b8a96f0f21fc8b4e9f6)
+
+❌ 5.0 Aplikacja obsłuży dodatkowo jedną z platform: Slack, Messenger, Webex
+
+Kod: [folder](https://github.com/Maurice010/e-biznes/tree/main/task3)
