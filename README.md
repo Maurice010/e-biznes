@@ -54,3 +54,5 @@ Kod: [folder](https://github.com/Maurice010/e-biznes/tree/main/task3)
 ✅ 4.5 Należy stworzyć model kategorii i dodać relację między kategorią, a produktem [commit](https://github.com/Maurice010/e-biznes/commit/0c68559219ea48aedf3353f542218690f9578a97)
 
 ❌ 5.0 pogrupować zapytania w gorm’owe scope'y
+
+Kod: [folder](https://github.com/Maurice010/e-biznes/tree/main/task4)
