@@ -42,3 +42,17 @@ Kod: [folder](https://github.com/Maurice010/e-biznes/tree/main/task2)
 ❌ 5.0 Aplikacja obsłuży dodatkowo jedną z platform: Slack, Messenger, Webex
 
 Kod: [folder](https://github.com/Maurice010/e-biznes/tree/main/task3)
+
+# Zadanie 4: Go
+
+✅ 3.0 Należy stworzyć aplikację we frameworki echo w j. Go, która będzie miała kontroler Produktów zgodny z CRUD [commit](https://github.com/Maurice010/e-biznes/commit/0c68559219ea48aedf3353f542218690f9578a97)
+
+✅ 3.5 Należy stworzyć model Produktów wykorzystując gorm oraz wykorzystać model do obsługi produktów (CRUD) w kontrolerze (zamiast listy) [commit](https://github.com/Maurice010/e-biznes/commit/0c68559219ea48aedf3353f542218690f9578a97)
+
+✅ 4.0 Należy dodać model Koszyka oraz dodać odpowiedni endpoint [commit](https://github.com/Maurice010/e-biznes/commit/0c68559219ea48aedf3353f542218690f9578a97)
+
+✅ 4.5 Należy stworzyć model kategorii i dodać relację między kategorią, a produktem [commit](https://github.com/Maurice010/e-biznes/commit/0c68559219ea48aedf3353f542218690f9578a97)
+
+❌ 5.0 pogrupować zapytania w gorm’owe scope'y
+
+Kod: [folder](https://github.com/Maurice010/e-biznes/tree/main/task4)
