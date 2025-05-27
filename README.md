@@ -70,3 +70,17 @@ Kod: [folder](https://github.com/Maurice010/e-biznes/tree/main/task4)
 ✅ 5.0 Należy wykorzystać axios’a oraz dodać nagłówki pod CORS [commit](https://github.com/Maurice010/e-biznes/commit/38d6ac1c4297179b23f1db7b7eb9fb0ac0599e92)
 
 Kod: [folder](https://github.com/Maurice010/e-biznes/tree/main/task5)
+
+# Zadanie 6 Testy
+
+✅ 3.0 Należy stworzyć 20 przypadków testowych w CypressJS lub Selenium (Kotlin, Python, Java, JS, Go, Scala) [commit](https://github.com/Maurice010/e-biznes/commit/107a9ed1d8c5ab3eee6b33c05fb2f25301d00803)
+
+✅ 3.5 Należy rozszerzyć testy funkcjonalne, aby zawierały minimum 50 asercji [commit](https://github.com/Maurice010/e-biznes/commit/107a9ed1d8c5ab3eee6b33c05fb2f25301d00803)
+
+✅ 4.0 Należy stworzyć testy jednostkowe do wybranego wcześniejszego projektu z minimum 50 asercjami [commit](https://github.com/Maurice010/e-biznes/commit/107a9ed1d8c5ab3eee6b33c05fb2f25301d00803)
+
+✅ 4.5 Należy dodać testy API, należy pokryć wszystkie endpointy z minimum jednym scenariuszem negatywnym per endpoint [commit](https://github.com/Maurice010/e-biznes/commit/107a9ed1d8c5ab3eee6b33c05fb2f25301d00803)
+
+❌ 5.0 Należy uruchomić testy funkcjonalne na Browserstacku
+
+Kod: [folder](https://github.com/Maurice010/e-biznes/tree/main/task5)
