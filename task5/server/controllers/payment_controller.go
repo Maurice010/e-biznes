@@ -15,6 +15,10 @@ func HandlePayment(c echo.Context) error {
 		return c.JSON(http.StatusBadRequest, map[string]string{"error": "invalid input"})
 	}
 
+	if len(items) == 0 {
+		return c.JSON(http.StatusBadRequest, map[string]string{"error": "empty cart"})
+	}
+
 	var total float64
 	for _, item := range items {
 		var product models.Product

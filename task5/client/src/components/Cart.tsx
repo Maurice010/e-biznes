@@ -28,9 +28,11 @@ export default function Cart() {
           <button onClick={() => decreaseQuantity(item.productId)}>-</button>
         </div>
       ))}
-      <Link to="/payment">
-        <button>Przejdź do płatności</button>
-      </Link>
+      {cartItems.length > 0 && (
+        <Link to="/payment">
+            <button>Przejdź do płatności</button>
+        </Link>
+      )}
       <button onClick={clearCart}>Wyczyść koszyk</button>
       <button onClick={handleSave}>Zapisz koszyk w bazie</button>
       {message && <p>{message}</p>}
