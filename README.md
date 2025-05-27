@@ -56,3 +56,17 @@ Kod: [folder](https://github.com/Maurice010/e-biznes/tree/main/task3)
 ❌ 5.0 pogrupować zapytania w gorm’owe scope'y
 
 Kod: [folder](https://github.com/Maurice010/e-biznes/tree/main/task4)
+
+# Zadanie 5: Frontend
+
+✅ 3.0 W ramach projektu należy stworzyć dwa komponenty: Produkty oraz Płatności; Płatności powinny wysyłać do aplikacji serwerowej dane, a w Produktach powinniśmy pobierać dane o produktach z aplikacji serwerowej [commit](https://github.com/Maurice010/e-biznes/commit/38d6ac1c4297179b23f1db7b7eb9fb0ac0599e92)
+
+✅ 3.5 Należy dodać Koszyk wraz z widokiem; należy wykorzystać routing [commit](https://github.com/Maurice010/e-biznes/commit/38d6ac1c4297179b23f1db7b7eb9fb0ac0599e92)
+
+✅ 4.0 Dane pomiędzy wszystkimi komponentami powinny być przesyłane za pomocą React hooks [commit](https://github.com/Maurice010/e-biznes/commit/38d6ac1c4297179b23f1db7b7eb9fb0ac0599e92)
+
+✅ 4.5 Należy dodać skrypt uruchamiający aplikację serwerową oraz kliencką na dockerze via docker-compose [commit](https://github.com/Maurice010/e-biznes/commit/38d6ac1c4297179b23f1db7b7eb9fb0ac0599e92)
+
+✅ 5.0 Należy wykorzystać axios’a oraz dodać nagłówki pod CORS [commit](https://github.com/Maurice010/e-biznes/commit/38d6ac1c4297179b23f1db7b7eb9fb0ac0599e92)
+
+Kod: [folder](https://github.com/Maurice010/e-biznes/tree/main/task5)
