@@ -71,7 +71,7 @@ Kod: [folder](https://github.com/Maurice010/e-biznes/tree/main/task4)
 
 Kod: [folder](https://github.com/Maurice010/e-biznes/tree/main/task5)
 
-# Zadanie 6 Testy
+# Zadanie 6: Testy
 
 ✅ 3.0 Należy stworzyć 20 przypadków testowych w CypressJS lub Selenium (Kotlin, Python, Java, JS, Go, Scala) [commit](https://github.com/Maurice010/e-biznes/commit/107a9ed1d8c5ab3eee6b33c05fb2f25301d00803)
 
@@ -82,5 +82,20 @@ Kod: [folder](https://github.com/Maurice010/e-biznes/tree/main/task5)
 ✅ 4.5 Należy dodać testy API, należy pokryć wszystkie endpointy z minimum jednym scenariuszem negatywnym per endpoint [commit](https://github.com/Maurice010/e-biznes/commit/107a9ed1d8c5ab3eee6b33c05fb2f25301d00803)
 
 ❌ 5.0 Należy uruchomić testy funkcjonalne na Browserstacku
+
+Kod: [folder](https://github.com/Maurice010/e-biznes/tree/main/task5)
+
+
+# Zadanie 8: Oauth2
+
+✅ 3.0 Logowanie przez aplikację serwerową (bez Oauth2) [commit](https://github.com/Maurice010/e-biznes/commit/ce5b349b229d286e94e74107dfc0644a41d3dbc5)
+
+✅ 3.5 Rejestracja przez aplikację serwerową (bez Oauth2) [commit](https://github.com/Maurice010/e-biznes/commit/ce5b349b229d286e94e74107dfc0644a41d3dbc5)
+
+✅ 4.0 Logowanie via Google OAuth2 [commit](https://github.com/Maurice010/e-biznes/commit/ce5b349b229d286e94e74107dfc0644a41d3dbc5)
+
+✅ 4.5 Logowanie via Facebook lub Github OAuth2 [commit](https://github.com/Maurice010/e-biznes/commit/ce5b349b229d286e94e74107dfc0644a41d3dbc5)
+
+✅ 5.0 Zapisywanie danych logowania OAuth2 po stronie serwera [commit](https://github.com/Maurice010/e-biznes/commit/ce5b349b229d286e94e74107dfc0644a41d3dbc5)
 
 Kod: [folder](https://github.com/Maurice010/e-biznes/tree/main/task5)
