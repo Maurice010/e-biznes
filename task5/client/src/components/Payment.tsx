@@ -18,7 +18,7 @@ export default function Payment() {
   };
 
   return (
-    <div>
+    <div style={{ padding: "2rem" }}>
       <h1>Płatność</h1>
       {cartItems.length === 0 && <p>Koszyk jest pusty</p>}
       {cartItems.length > 0 && (
@@ -33,7 +33,7 @@ export default function Payment() {
           <button onClick={handleSubmit}>Zapłać</button>
         </>
       )}
-      {message && <p>{message}</p>}
+      {message && <p style={{ marginTop: "1rem" }}>{message}</p>}
     </div>
   );
 }
