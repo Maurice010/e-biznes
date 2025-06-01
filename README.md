@@ -85,6 +85,19 @@ Kod: [folder](https://github.com/Maurice010/e-biznes/tree/main/task5)
 
 Kod: [folder](https://github.com/Maurice010/e-biznes/tree/main/task5)
 
+# Zadanie 7: Sonar
+
+✅ 3.0 Należy dodać litera do odpowiedniego kodu aplikacji serwerowej w hookach gita [commit](https://github.com/Maurice010/task7-server/commit/8bbdd9626a05d57982c79da57b2dd899cbdf086f)
+
+✅ 3.5 Należy wyeliminować wszystkie bugi w kodzie w Sonarze (kod aplikacji serwerowej) [commit](https://github.com/Maurice010/task7-server/commit/628e054fb31bf1cd061ba18a04e4e8d1f71c51be)
+
+✅ 4.0 Należy wyeliminować wszystkie zapaszki w kodzie w Sonarze (kod aplikacji serwerowej) [commit](https://github.com/Maurice010/task7-server/commit/628e054fb31bf1cd061ba18a04e4e8d1f71c51be)
+
+✅ 4.5 Należy wyeliminować wszystkie podatności oraz błędy bezpieczeństwa w kodzie w Sonarze (kod aplikacji serwerowej) [commit](https://github.com/Maurice010/task7-server/commit/628e054fb31bf1cd061ba18a04e4e8d1f71c51be)
+
+✅ 5.0 Należy wyeliminować wszystkie błędy oraz zapaszki w kodzie aplikacji klienckiej [commit](https://github.com/Maurice010/task7-client/commit/f932ebc780562719d933e14fd51f604943ecff00)
+
+Kod: [client](https://github.com/Maurice010/task7-client) [server](https://github.com/Maurice010/task7-server) 
 
 # Zadanie 8: Oauth2
 
