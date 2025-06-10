@@ -112,3 +112,18 @@ Kod: [client](https://github.com/Maurice010/task7-client) [server](https://githu
 ✅ 5.0 Zapisywanie danych logowania OAuth2 po stronie serwera [commit](https://github.com/Maurice010/e-biznes/commit/ce5b349b229d286e94e74107dfc0644a41d3dbc5)
 
 Kod: [folder](https://github.com/Maurice010/e-biznes/tree/main/task5)
+
+# Zadanie 9: ChatGPT bot
+
+✅ 3.0 Należy stworzyć po stronie serwerowej osobny serwis do łącznia z
+chatGPT do usługi chat [commit](https://github.com/Maurice010/e-biznes/commit/ed834a0d4e7ea3cfa67dd09be419c4463d27ef74)
+
+✅ 3.5 Należy stworzyć interfejs frontowy dla użytkownika, który komunikuje się z serwisem; odpowiedzi powinny być wysyałen do frontendowego interfejsu [commit](https://github.com/Maurice010/e-biznes/commit/ed834a0d4e7ea3cfa67dd09be419c4463d27ef74)
+
+✅ 4.0 Stworzyć listę 5 różnych otwarć oraz zamknięć rozmowy [commit](https://github.com/Maurice010/e-biznes/commit/ed834a0d4e7ea3cfa67dd09be419c4463d27ef74)
+
+✅ 4.5 Filtrowanie po zagadnieniach związanych ze sklepem (np. ograniczenie się jedynie do ubrań oraz samego sklepu) do GPT [commit](https://github.com/Maurice010/e-biznes/commit/ed834a0d4e7ea3cfa67dd09be419c4463d27ef74)
+
+✅ 5.0 Filtrowanie odpowiedzi po sentymencie [commit](https://github.com/Maurice010/e-biznes/commit/ed834a0d4e7ea3cfa67dd09be419c4463d27ef74)
+
+Kod: [folder](https://github.com/Maurice010/e-biznes/tree/main/task9)
