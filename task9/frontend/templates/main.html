@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+        }
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 100%;
+            max-width: 800px;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+        form {
+            margin-bottom: 20px;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+        }
+        #message {
+            width: 400px;
+        }
+        #reply, #sentiment, #error, #loading {
+            max-width: 600px;
+            text-align: center;
+        }
+        #loading {
+            font-style: italic;
+            color: gray;
+        }
+        .response-block {
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            padding: 10px;
+            margin-top: 10px;
+            background-color: #fff;
+            width: 100%;
+            max-width: 600px;
+        }
+        #response-container {
+            overflow-y: auto;
+            flex-grow: 1;
+            width: 100%;
+            padding: 10px;
+            box-sizing: border-box;
+        }
+    </style>
+    <script>
+        async function sendMessage(event) {
+            event.preventDefault();
+            const message = document.getElementById("message").value;
+            const container = document.getElementById("response-container");
+            const error = document.getElementById("error");
+            const button = document.getElementById("submitBtn");
+            const loading = document.getElementById("loading");
+
+            error.innerText = "";
+            loading.innerText = "Loading...";
+            button.disabled = true;
+
+            let first_message = false;
+            if (!localStorage.getItem("chatStarted")) {
+                localStorage.setItem("chatStarted", "true");
+                first_message = true;
+            }
+
+            try {
+                const response = await fetch("http://127.0.0.1:8000/main", {
+                    method: "POST",
+                    headers: {
+                        "Content-Type": "application/json"
+                    },
+                    body: JSON.stringify({ text: message, first_message: first_message })
+                });
+
+                const data = await response.json();
+
+                if (data.error) {
+                    error.innerText = data.error;
+                } else {
+                    const block = document.createElement("div");
+                    block.className = "response-block";
+                    block.innerHTML = `<p><strong>Question:</strong> ${message}</p>
+                                    <p><strong>Reply:</strong> ${data.reply}</p>
+                                    <p><strong>Sentiment:</strong> ${data.sentiment}</p>`;
+                    container.appendChild(block);
+                    container.scrollTop = container.scrollHeight;
+                }
+            } catch (err) {
+                error.innerText = "Error connecting to the API.";
+            } finally {
+                loading.innerText = "";
+                button.disabled = false;
+                document.getElementById("message").value = "";
+            }
+        }
+    </script>
+</head>
+<body>
+    <div class="container">
+        <h1>Computer Shop Assistant Maciek</h1>
+        <form onsubmit="sendMessage(event)">
+            <input type="text" id="message" name="message" required>
+            <button type="submit" id="submitBtn">Send</button>
+        </form>
+
+        <div id="loading"></div>
+        <div id="error" style="color: red;"></div>
+
+        <div id="response-container"></div>
+    </div>
+</body>
+</html>
