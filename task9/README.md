@@ -3,7 +3,6 @@
 - Python 3.10+
 - [Ollama](https://ollama.com/) installed and running (used to run LLaMA 2 locally)
 - pip
-- Git (optional)
 
 ---
 
