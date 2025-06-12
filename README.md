@@ -43,6 +43,10 @@ Kod: [folder](https://github.com/Maurice010/e-biznes/tree/main/task2)
 
 Kod: [folder](https://github.com/Maurice010/e-biznes/tree/main/task3)
 
+![bot](./showcase/res_bot_task3.png)
+
+![botpost](./showcase/res_post_task3.png)
+
 # Zadanie 4: Go
 
 ✅ 3.0 Należy stworzyć aplikację we frameworki echo w j. Go, która będzie miała kontroler Produktów zgodny z CRUD [commit](https://github.com/Maurice010/e-biznes/commit/0c68559219ea48aedf3353f542218690f9578a97)
@@ -113,6 +117,8 @@ Kod: [client](https://github.com/Maurice010/task7-client) [server](https://githu
 
 Kod: [folder](https://github.com/Maurice010/e-biznes/tree/main/task5)
 
+![oauth](./showcase/oauth2.gif)
+
 # Zadanie 9: ChatGPT bot
 
 ✅ 3.0 Należy stworzyć po stronie serwerowej osobny serwis do łącznia z
@@ -127,3 +133,5 @@ chatGPT do usługi chat [commit](https://github.com/Maurice010/e-biznes/commit/e
 ✅ 5.0 Filtrowanie odpowiedzi po sentymencie [commit](https://github.com/Maurice010/e-biznes/commit/ed834a0d4e7ea3cfa67dd09be419c4463d27ef74)
 
 Kod: [folder](https://github.com/Maurice010/e-biznes/tree/main/task9)
+
+![chat](./showcase/chatbot.png)

@@ -17,11 +17,11 @@ export default function Cart() {
   };
 
   return (
-    <div>
+    <div style={{ padding: "2rem" }}>
       <h1>Koszyk</h1>
       {cartItems.length === 0 && <p>Koszyk jest pusty</p>}
       {cartItems.map((item, index) => (
-        <div key={index}>
+        <div key={index} style={{ marginBottom: "1rem" }}>
           <p>Produkt ID: {item.productId}</p>
           <p>Ilość: {item.quantity}</p>
           <button onClick={() => increaseQuantity(item.productId)}>+</button>
@@ -30,12 +30,16 @@ export default function Cart() {
       ))}
       {cartItems.length > 0 && (
         <Link to="/payment">
-            <button>Przejdź do płatności</button>
+          <button>Przejdź do płatności</button>
         </Link>
       )}
-      <button onClick={clearCart}>Wyczyść koszyk</button>
-      <button onClick={handleSave}>Zapisz koszyk w bazie</button>
-      {message && <p>{message}</p>}
+      <div style={{ marginTop: "1rem" }}>
+        <button onClick={clearCart}>Wyczyść koszyk</button>
+        <button onClick={handleSave} style={{ marginLeft: "1rem" }}>
+          Zapisz koszyk w bazie
+        </button>
+      </div>
+      {message && <p style={{ marginTop: "1rem" }}>{message}</p>}
     </div>
   );
 }
