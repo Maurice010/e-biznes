@@ -13,7 +13,7 @@ przez CMD oraz gradle [commit](https://github.com/Maurice010/e-biznes/commit/feb
 ✅ 5.0 dodać konfigurację docker-compose [commit](https://github.com/Maurice010/e-biznes/commit/febd9483b97d05fa8d29b4c4e2cb59b5b7410ed5)
 
 Kod: [folder](https://github.com/Maurice010/e-biznes/tree/main/task1)
-Obraz: [link docker-hub](https://hub.docker.com/repository/docker/mauricee/e-biz-task1)
+Obraz: [link docker-hub](https://hub.docker.com/r/mauricee/e-biz-task1)
 
 # Zadanie 2: Play & Scala
 
