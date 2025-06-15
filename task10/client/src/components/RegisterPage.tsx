@@ -9,7 +9,7 @@ export default function RegisterPage() {
   const handleRegister = async (e: React.FormEvent) => {
     e.preventDefault();
     try {
-      const res = await fetch("task10-back-grfchafkdxbxd8bb.polandcentral-01.azurewebsites.net/api/auth/register", {
+      const res = await fetch("https://task10-back-grfchafkdxbxd8bb.polandcentral-01.azurewebsites.net/api/auth/register", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ email, password }),

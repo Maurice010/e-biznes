@@ -5,7 +5,7 @@ export const saveCart = async (items: CartItem[]) => {
   const token = localStorage.getItem("token");
 
   const res = await axios.post(
-    "task10-back-grfchafkdxbxd8bb.polandcentral-01.azurewebsites.net/cart/save",
+    "https://task10-back-grfchafkdxbxd8bb.polandcentral-01.azurewebsites.net/cart/save",
     items,
     {
       headers: {

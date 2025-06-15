@@ -5,7 +5,7 @@ from selenium.webdriver.common.by import By
 from selenium.webdriver.chrome.service import Service
 import time
 
-URL = "task10-front-c7eyc9dfhfabg4fb.polandcentral-01.azurewebsites.net"
+URL = "https://task10-front-c7eyc9dfhfabg4fb.polandcentral-01.azurewebsites.net"
 
 @pytest.fixture(scope="module")
 def driver():

@@ -1,6 +1,6 @@
 import requests
 
-BASE_URL = "task10-back-grfchafkdxbxd8bb.polandcentral-01.azurewebsites.net"
+BASE_URL = "https://task10-back-grfchafkdxbxd8bb.polandcentral-01.azurewebsites.net"
 
 def test_get_products():
     res = requests.get(f"{BASE_URL}/products")

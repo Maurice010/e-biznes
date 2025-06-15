@@ -16,7 +16,7 @@ export default function Products() {
 
   useEffect(() => {
     axios
-      .get("task10-back-grfchafkdxbxd8bb.polandcentral-01.azurewebsites.net/products", {
+      .get("https://task10-back-grfchafkdxbxd8bb.polandcentral-01.azurewebsites.net/products", {
         headers: {
           "Content-Type": "application/json",
         },

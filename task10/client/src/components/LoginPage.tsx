@@ -9,7 +9,7 @@ export default function LoginPage() {
   const handleLogin = async (e: React.FormEvent) => {
     e.preventDefault();
     try {
-      const res = await fetch("task10-back-grfchafkdxbxd8bb.polandcentral-01.azurewebsites.net/api/auth/login", {
+      const res = await fetch("https://task10-back-grfchafkdxbxd8bb.polandcentral-01.azurewebsites.net/api/auth/login", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ email, password }),
@@ -27,11 +27,11 @@ export default function LoginPage() {
   };
 
   const handleGoogle = () => {
-    window.location.href = "task10-back-grfchafkdxbxd8bb.polandcentral-01.azurewebsites.net/api/auth/google";
+    window.location.href = "https://task10-back-grfchafkdxbxd8bb.polandcentral-01.azurewebsites.net/api/auth/google";
   };
 
   const handleGithub = () => {
-    window.location.href = "task10-back-grfchafkdxbxd8bb.polandcentral-01.azurewebsites.net/api/auth/github";
+    window.location.href = "https://task10-back-grfchafkdxbxd8bb.polandcentral-01.azurewebsites.net/api/auth/github";
   };
 
   return (
