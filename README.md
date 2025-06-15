@@ -135,3 +135,21 @@ chatGPT do usługi chat [commit](https://github.com/Maurice010/e-biznes/commit/e
 Kod: [folder](https://github.com/Maurice010/e-biznes/tree/main/task9)
 
 ![chat](./showcase/chatbot.png)
+
+# Zadanie 10: Chmura/CI
+
+✅ 3.0 Należy stworzyć odpowiednie instancje po stronie chmury na dockerze [commit](https://github.com/Maurice010/e-biznes/commit/3d5583f9ab8fa807f5cc8890885893a4f2aaeb8d)
+
+✅ 3.5 Stworzyć odpowiedni pipeline w Github Actions do budowania aplikacji (np. via fatjar) [commit](https://github.com/Maurice010/e-biznes/commit/3d5583f9ab8fa807f5cc8890885893a4f2aaeb8d)
+
+✅ 4.0 Dodać notyfikację mailową o zbudowaniu aplikacji [commit](https://github.com/Maurice010/e-biznes/commit/3d5583f9ab8fa807f5cc8890885893a4f2aaeb8d)
+
+✅ 4.5 Dodać krok z deploymentem aplikacji serwerowej oraz klienckiej na chmurę [commit](https://github.com/Maurice010/e-biznes/commit/3d5583f9ab8fa807f5cc8890885893a4f2aaeb8d)
+
+❌ 5.0 Dodać uruchomienie regresyjnych testów automatycznych (funkcjonalnych) jako krok w Actions
+
+Kod: [folder](https://github.com/Maurice010/e-biznes/tree/main/task10)
+
+Github Actions logs: [logs](https://github.com/Maurice010/e-biznes/actions/runs/15664812436/job/44127506293)
+
+Aplikacja: [www](task10-front-c7eyc9dfhfabg4fb.polandcentral-01.azurewebsites.net)
