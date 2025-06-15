@@ -1,0 +1,73 @@
+name: Build and deploy a container to an Azure Web App
+
+env:
+  ACR_LOGIN_SERVER: task10.azurecr.io
+  BACKEND_WEBAPP_NAME: task10-back
+  FRONTEND_WEBAPP_NAME: task10-front
+
+on:
+  push:
+    branches: [ "main" ]
+  workflow_dispatch:
+
+jobs:
+  build-and-push:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Log in to Azure Container Registry
+        uses: docker/login-action@v3
+        with:
+          registry: ${{ env.ACR_LOGIN_SERVER }}
+          username: ${{ secrets.ACR_USERNAME }}
+          password: ${{ secrets.ACR_PASSWORD }}
+          
+      - name: Build and push frontend image
+        uses: docker/build-push-action@v5
+        with:
+          context: ./task10/client
+          file: ./task10/client/Dockerfile
+          push: true
+          tags: ${{ env.ACR_LOGIN_SERVER }}/client:latest
+
+      - name: Build and push backend image
+        uses: docker/build-push-action@v5
+        with:
+          context: ./task10/server
+          file: ./task10/server/Dockerfile
+          push: true
+          tags: ${{ env.ACR_LOGIN_SERVER }}/backend:latest
+          
+  deploy:
+    runs-on: ubuntu-latest
+    needs: build-and-push
+
+    steps:
+      - name: Deploy frontend to Azure Web App
+        uses: azure/webapps-deploy@v2
+        with:
+          app-name: ${{ env.FRONTEND_WEBAPP_NAME }}
+          publish-profile: ${{ secrets.AZURE_WEBAPP_PUBLISH_PROFILE_FRONT }}
+          images: '${{ env.ACR_LOGIN_SERVER }}/client:latest'
+
+      - name: Deploy backend to Azure Web App
+        uses: azure/webapps-deploy@v2
+        with:
+          app-name: ${{ env.BACKEND_WEBAPP_NAME }}
+          publish-profile: ${{ secrets.AZURE_WEBAPP_PUBLISH_PROFILE_BACK }}
+          images: '${{ env.ACR_LOGIN_SERVER }}/backend:latest'
+
+      - name: Send email notification
+        uses: dawidd6/action-send-mail@v3
+        with:
+          server_address: smtp.gmail.com
+          server_port: 465
+          username: ${{ secrets.EMAIL_USERNAME }}
+          password: ${{ secrets.EMAIL_PASSWORD }}
+          subject: 'Build and deployment completed'
+          to: ${{ secrets.EMAIL_TO }}
+          from: 'Your CI <${{ secrets.EMAIL_USERNAME }}>'
+          body: 'All steps completed successfully.'
