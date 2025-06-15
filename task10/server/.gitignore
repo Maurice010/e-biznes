@@ -2,7 +2,6 @@
 *.out
 *.o
 
-/go.sum
 /go.sum.old
 
 *.db
