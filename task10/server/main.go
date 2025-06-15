@@ -20,7 +20,7 @@ func main() {
 	e.Use(middleware.CORSWithConfig(middleware.CORSConfig{
 		AllowOrigins: []string{"https://task10-front-c7eyc9dfhfabg4fb.polandcentral-01.azurewebsites.net"},
 		AllowMethods: []string{echo.GET, echo.POST, echo.OPTIONS},
-		AllowHeaders: []string{echo.HeaderOrigin, echo.HeaderContentType, echo.HeaderAccept},
+		AllowHeaders: []string{echo.HeaderOrigin, echo.HeaderContentType, echo.HeaderAccept, echo.HeaderAuthorization,},
 	}))
 
 	e.POST("/api/auth/register", controllers.Register)
