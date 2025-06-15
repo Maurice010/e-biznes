@@ -20,7 +20,7 @@ export const AppProvider = ({ children }: { children: ReactNode }) => {
 
   useEffect(() => {
     const saved = localStorage.getItem("cartItems");
-    console.log("🔁 ODCZYT localStorage:", saved);
+
     if (saved) {
       setCartItems(JSON.parse(saved));
     }
