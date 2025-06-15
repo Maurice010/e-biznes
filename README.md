@@ -152,4 +152,4 @@ Kod: [folder](https://github.com/Maurice010/e-biznes/tree/main/task10)
 
 Github Actions logs: [logs](https://github.com/Maurice010/e-biznes/actions/runs/15664812436/job/44127506293)
 
-Aplikacja: [www](task10-front-c7eyc9dfhfabg4fb.polandcentral-01.azurewebsites.net)
+Aplikacja: [www](https://task10-front-c7eyc9dfhfabg4fb.polandcentral-01.azurewebsites.net)
