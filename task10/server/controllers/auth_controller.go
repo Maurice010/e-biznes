@@ -26,7 +26,7 @@ var jwtSecret = []byte("your_secret_key")
 var googleOAuthConfig = &oauth2.Config{
 	ClientID:     os.Getenv("GOOGLE_CLIENT_ID"),
 	ClientSecret: os.Getenv("GOOGLE_CLIENT_SECRET"),
-	RedirectURL:  "https://task10-back.azurewebsites.net/api/auth/google/callback",
+	RedirectURL:  "task10-back-grfchafkdxbxd8bb.polandcentral-01.azurewebsites.net/api/auth/google/callback",
 	Scopes:       []string{"https://www.googleapis.com/auth/userinfo.email", "https://www.googleapis.com/auth/userinfo.profile"},
 	Endpoint:     google.Endpoint,
 }
@@ -34,7 +34,7 @@ var googleOAuthConfig = &oauth2.Config{
 var githubOAuthConfig = &oauth2.Config{
 	ClientID:     os.Getenv("GITHUB_CLIENT_ID"),
 	ClientSecret: os.Getenv("GITHUB_CLIENT_SECRET"),
-	RedirectURL:  "https://task10-back.azurewebsites.net/api/auth/github/callback",
+	RedirectURL:  "task10-back-grfchafkdxbxd8bb.polandcentral-01.azurewebsites.net/api/auth/github/callback",
 	Scopes:       []string{"user:email"},
 	Endpoint:     githuboauth.Endpoint,
 }
@@ -116,7 +116,7 @@ func GoogleCallback(c echo.Context) error {
 	}
 
 	token := generateJWT(user)
-	return c.Redirect(http.StatusFound, "https://task10-front.azurewebsites.net/?token="+token)
+	return c.Redirect(http.StatusFound, "task10-front-c7eyc9dfhfabg4fb.polandcentral-01.azurewebsites.net/?token="+token)
 }
 
 func GitHubLogin(c echo.Context) error {
@@ -163,7 +163,7 @@ func GitHubCallback(c echo.Context) error {
 	}
 
 	token := generateJWT(u)
-	return c.Redirect(http.StatusFound, "https://task10-front.azurewebsites.net/?token="+token)
+	return c.Redirect(http.StatusFound, "task10-front-c7eyc9dfhfabg4fb.polandcentral-01.azurewebsites.net/?token="+token)
 }
 
 func generateJWT(user models.User) string {

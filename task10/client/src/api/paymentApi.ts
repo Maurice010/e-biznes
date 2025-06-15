@@ -5,7 +5,7 @@ export const sendPayment = async (cartItems: CartItem[]) => {
   const token = localStorage.getItem("token");
 
   const res = await axios.post(
-    "https://task10-back.azurewebsites.net/payment",
+    "task10-back-grfchafkdxbxd8bb.polandcentral-01.azurewebsites.net/payment",
     cartItems,
     {
       headers: {
